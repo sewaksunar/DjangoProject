@@ -6,17 +6,35 @@ To manage dependencies and create an isolated environment for this project, we u
 
 ## Installation
 
-Install Pipenv using pip:
+First, install Pipenv using pip:
 
-```
+```bash
 pip install pipenv
 ```
 
-Pipenv creates a virtual environment and manages all package versions required for the application.
+Pipenv will create a virtual environment and manage all package versions required for the application.
 
-Install Django using pipenv:
+Next, install Django within the virtual environment:
 
-```
+```bash
 pipenv install django
 ```
-It is virtual enviroment 
+This ensures that all dependencies are contained within a dedicated virtual environment for your project. 
+## Get inside virtual env
+```
+pip shell
+```
+### WrokSpace
+Create project 
+```
+django-admin startproject firstproject
+```
+a folder is creater which is "firstpriject" also inside it another folder is created with same name which contain differnt configuration for our whole project
+
+we can use ``` django-admin ``` or ```manage.py`` but we use second one
+
+## To create projects
+***note:** insdure cmd is in ```firstproject``` folder directrix
+```
+python manage.py startapp firstapp
+```
